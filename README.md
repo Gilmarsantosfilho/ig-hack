@@ -1,10 +1,11 @@
-# Instalação
+# Onde Foi Testado
 
-´´´´text
 [X] Termux
-
 [X] Linux
-´´´´text
+
+
+
+# Instalação
 
 ```
 git clone https://github.com/Gilmarsantosfilho/ig-hack
