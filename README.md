@@ -1,7 +1,8 @@
 # Onde Foi Testado
 
-[X] Termux
+```[X] Termux
 [X] Linux
+```
 
 
 
