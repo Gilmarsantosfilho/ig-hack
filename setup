@@ -13,11 +13,11 @@ echo -e '\e[92m
 echo -e "\e[92m"
 center "SETUP PROCESS"
 echo -e "
-       $grn-----------------------------------$grn
-      |$grn FOLLLOW:$cod github.com/noob-hackers $grn |$grn
-      |$grn SUBSCRIBE:$cod Noob Hackers          $grn |$grn
-      |$grn CHAT:$cod wa.me/+919113948054        $grn |$grn
-       $grn-----------------------------------$grn
+       $grn--------------------------------------------------------$grn
+      |$grn FOLLLOW:$cod https://github.com/Gilmarsantosfilho $grn |$grn
+      |$grn SUBSCRIBE:$cod Gilmar Filho         $grn |$grn
+      |$grn CHAT:$cod                             $grn |$grn
+       $grn-----------------------------------------------------------$grn
 "
 center "INSTALLATION"
 echo -e "\e[34mSTABLE CONNECTION [\e[92m✓\e[34m]\e[0m"
