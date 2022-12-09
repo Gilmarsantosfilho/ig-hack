@@ -1,9 +1,7 @@
-# Testando 
+# Instalação
 
-[v] Termux
-
-# Instalação Termux
-
+[X] Termux
+[X] Linux
 
 ```
 git clone https://github.com/Gilmarsantosfilho/ig-hack
