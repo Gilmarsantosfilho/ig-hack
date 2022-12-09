@@ -5,7 +5,7 @@
 
 
 
-# Instalação ```Termux````
+# Instalação ```Termux```
 
 ```
 git clone https://github.com/Gilmarsantosfilho/ig-hack
