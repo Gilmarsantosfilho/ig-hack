@@ -3,41 +3,7 @@
 #Goes to real author
 #colours
 #####3#3#
-check(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/ighack/master/update.v3.2 2>/dev/null; then
-cd $HOME/ighack/core
-echo "ig" > update.txt
-else
-echo
-fi
-}
-check
-option(){
-if [ -f "$HOME/ighack/core/update.txt" ];then
-cd $HOME/ighack/core
-bash update.sh
-else
-echo " "
-fi
-}
-option
-check1(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/ighack.v.1 2>/dev/null; then
-cd $HOME/ighack/core
-echo "igg" > patch.txt
-else
-echo
-fi
-}
-check1
-option1(){
-if [ -f "$HOME/ighack/core/patch.txt" ];then
-cd $HOME/ighack/core
-bash patch.sh
-else
-echo " "
-fi
-}
+
 red='\033[1;31m'
 rset='\033[0m'
 grn='\033[1;32m'
@@ -61,8 +27,8 @@ if pgrep -x "$torser" >/dev/null
 then
 echo 
 else
-echo -e "\e[91mTOR\e[96m IS NOT RUNNING, PLEASE START TOR IN A NEW SESSION
-          BY TYPING\e[92m tor\e[96m AND START IGHACK AGAIN\e[0m "
+echo -e "\e[91mTOR\e[96m NÃO ESTÁ EM EXECUÇÃO, POR FAVOR INICIE O TOR EM UMA NOVA SESSÃO
+          BY TYPING\e[92m tor\e[96m E COMECE DE NOVO\e[0m "
 exit 1
 fi
 vid
