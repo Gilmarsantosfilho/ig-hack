@@ -161,128 +161,10 @@ more(){
 center() {                                                                                                                                                termwidth=$(stty size | cut -d" " -f2)                                                                                                                  padding="$(printf '%0.1s' ={1..500})"
   printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
 }
-echo -e '\e[92m
-    __    __     ______     ______     ______    
-   /\ "-./  \   /\  __ \   /\  == \   /\  ___\   
-   \ \ \-./\ \  \ \ \/\ \  \ \  __<   \ \  __\   
-    \ \_\ \ \_\  \ \_____\  \ \_\ \_\  \ \_____\ 
-     \/_/  \/_/   \/_____/   \/_/ /_/   \/_____/ 
-'
-echo -e "\e[34m"
-center "OPTIONS"
-echo ' '
-echo -e "\e[91m[\e[92m1\e[91m]\e[32m MORE <.>\e[92m"
-echo -e "\e[91m[\e[92m2\e[91m]\e[32m DEVICE-CHECK <.>\e[92m"
-echo -e "\e[91m[\e[92m3\e[91m]\e[32m EXIT <.>\e[92m"
-echo ' '
-echo -en "\e[34m#~#SELECT OPTION: \e[92m"
-read optz
-if [ "$optz" = "1" ];
-then
-am start -a android.intent.action.VIEW -d https://noob-hackers.github.io/noobspage 2>/dev/null
-more
-clear
-elif [ "$optz" = "2" ];
-then
-devchk
-clear
-elif [ "$optz" = "3" ];
-then
-banner
-menu1
-exit
-else
-echo ' '
-exit
-fi
-}
-devchk(){
-  clear
-echo -e '\e[92m
-                  ___  ___  _  _  __  __  ___ 
-                 (   \(  _)( )( )(  )/ _)(  _)
-                  ) ) )) _) \\//  )(( (_  ) _)
-                 (___/(___) (__) (__)\__)(___)
 
-'
-center "!CHECKING DEVICE INFO!"
-cod="\033[0m"
-o="\033[91m"
-grn="\033[92m"
-blu="\033[34m"
-mob=$(uname -o)
-arc=$(dpkg --print-architecture)
-str=$(du -hs)                                                               
-krn=$(uname -s)                                                             
-ip=$(curl -s https://api.ipify.org)
-AVL=`df -h /storage/emulated | awk '{ print $4 }' | tail -1`
-upt=$(uptime | sed 's/.*up \([^,]*\), .*/\1/')
-shl=$(ps -p $$ | tail -1 | awk '{print $NF}')
-egl=$(getprop ro.hardware.egl)
-hardw=$(getprop ro.hardware)
-modl=$(getprop ro.product.model)
-brnd=$(getprop ro.product.brand)
-cpu=$(getprop ro.product.cpu.abi)
-date=$(date +%A-%B/%d/%Y)
-wom=$(whoami)
-echo -e "                                                                                                  
-      ╭━━━━━━━━━━━━━╮
-      ┃━━━━$blu●$grn━══━━━━━┃| $grn$cod Date=$o" $date"$grn
-      ┃SUBSCRIBE    ┃| $grn$cod CPU=$o" $cpu"$grn
-      ┃LIKE         ┃| $grn$cod ARCHITECTURE=$o" $arc"$grn
-      ┃SHARE        ┃| $grn$cod STORAGE=$o" $AVL"$grn
-      ┃             ┃| $grn$cod WHI=$o" $wom"$grn
-      ┃THANK YOU FOR┃| $grn$cod OS=$o" $mob"$grn
-      ┃ USING TOOLS ┃| $grn$cod KERNEL=$o" $krn"$grn
-      ┃             ┃| $grn$cod IPV4=$o" $ip"$grn
-      ┃             ┃| $grn$cod UPTIME=$o" $upt"$grn
-      ┃  ( ͡❛ ͜ʖ ͡❛)   ┃| $grn$cod SHELL=$o" $shl"$grn
-      ┃             ┃| $grn$cod EGL=$o" $egl"$grn
-      ┃ Noob Hackers┃| $grn$cod HARDWARE=$o" $hardw"$grn
-      ┃━━━━━ ○ ━━━━━┃| $grn$cod MODEL=$o" $modl"$grn
-      ╰━━━━━━━━━━━━━╯
-"
-center "^CHECKING DONE^"
-echo -e "\e[93m                     Subscribe On Youtube\e[92m"
-center "<NOOB HACLERS>"
-sleep 20.0
-more
 }
-vid(){
-FILE=$HOME/ighack/noob.noob
-if [ -f "$FILE" ]; then
-pop
-else
-echo
-fi
-}
-pop(){
-clear
-echo -e "\e[96m                ╔═══════════════════════════════════╗\e[0m"
-echo -e "\e[96m                ║  \e[93mHAI, I JUST UPLOADED NEW\e[96m VIDEO   ║\e[0m"
-echo -e "\e[96m                ║      WATCH NEW VIDEO NOW.....!    ║\e[0m"
-echo -e "\e[96m                ║                                   ║\e[0m"
-echo -e "\e[96m                ║        Select \e[92my\e[96m to watch\e[96m          ║\e[0m"
-echo -e "\e[96m                ║                (\e[93mOR\e[96m)               \e[96m║\e[0m"
-echo -e "\e[96m                ║        Select \e[91mt\e[96m to cancel\e[96m         ║\e[0m"
-echo -e "\e[96m                ║                (\e[93mOR\e[96m)               \e[96m║\e[0m"
-echo -e "\e[96m                ║     Select \e[91mz\e[96m to skipforever\e[96m       ║\e[0m"
-echo -e "\e[96m                ╚═══════════════════════════════════╝\e[0m"
-echo -en "\e[32mSELECT OPTION [\e[93my/\e[93mt/\e[32m\e[93mz\e[32m]: \e[0m "
-read p
-if [ "$p" = "y" ];
-then
-am start -a android.intent.action.VIEW -d https://noobhacktube.com 2>/dev/null
-clear
-baner1
-menu1
-elif [ "$p" = "t" ];
-then
-clear
-baner1
-menu1
-elif [ "$p" = "z" ];
-then
+
+
 cd $HOM/ighack
 rm noob.noob
 banner
@@ -304,5 +186,4 @@ baner1
 menu1
 fi
 }
-banner
-menu1
+
