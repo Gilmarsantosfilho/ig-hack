@@ -295,72 +295,8 @@ fi
 }
 abot(){
 clear
-echo -e '\e[91m
-                 ──▐─▌──▐─▌──
-                 ─▐▌─▐▌▐▌─▐▌─
-                 ─█▄▀▄██▄▀▄█─
-                 ──▄──██▌─▄──
-                 ▄▀─█▀██▀█─▀▄
-                 ▐▌▐▌─▐▌─▐▌▐▌
-                 ─▐─█────█─▌─
-                 ────▌──▐────
-'
-echo -e "\e[93m                  CALL ME \e[92mNITRO" | pv -qL 10
-echo -e "\e[93m             IAM FROM \e[92mNOOB HACKERS" | pv -qL 10
-echo -e "\e[93m       IM A \e[92mGEEK\e[93m WITH LOTS OF EXCITEMENT" | pv -qL 10
-echo -e "\e[93m             HOPE YOU LIKE THIS SCRIPT" | pv -qL 10
-echo -e "\e[93m         OOPS... I TALK A LOT SRY FOR THAT " | pv -qL 10
-echo -e "\e[93m              JOIN GROUPS ON \e[92mWHATS' APP" | pv -qL 10
-echo -e "\e[93m        MY WEBSITE:\e[92m www.noob-hackers.com\e[0m" | pv -qL 10
-echo -e "\e[93m        PRACTICAL VIDEOS:\e[92m www.noobhacktube.com\e[0m" | pv -qL 10
-echo -e "\e[92m                BYEE.............." | pv -qL 10
-sleep 8.0
-baner1
-menu1
-}
-help(){
-  clear
-  center() {                                                                                                                                                termwidth=$(stty size | cut -d" " -f2)                                                                                                                  padding="$(printf '%0.1s' ={1..500})"
-  printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
-}
-echo -e '\e[91m
-      __  __     ______     __         ______
-     /\ \_\ \   /\  ___\   /\ \       /\  == \
-     \ \  __ \  \ \  __\   \ \ \____  \ \  _-/
-      \ \_\ \_\  \ \_____\  \ \_____\  \ \_\
-       \/_/\/_/   \/_____/   \/_____/   \/_/
-'
-echo -e "\e[92m"
-center "OPTIONS"
-echo " "
-echo -e "\e[91m[\e[92m1\e[91m]\e[34m WATCH VIDEO ->\e[92m"
-echo -e "\e[91m[\e[92m2\e[91m]\e[34m READ POST ->\e[92m"
-echo -e "\e[91m[\e[92m3\e[91m]\e[34m DOWNLOAD PDF ->\e[92m"
-echo -e "\e[91m[\e[92m4\e[91m]\e[34m MORE ->\e[92m"
-echo -e "\e[91m[\e[92m5\e[91m]\e[34m EXIT ->\e[92m"
-echo ' '
-echo -en "\e[34m~SELECT OPTION: \e[92m"
-read opts
-if [ "$opts" = "1" ];
-then
-am start -a android.intent.action.VIEW -d https://noobhacktube.com/v/r2ttPR 2>/dev/null
-help
-elif [ "$opts" = "2" ];                             
-then
-am start -a android.intent.action.VIEW -d https://bit.ly/3hF5PT2 2>/dev/null
-clear
-help
-elif [ "$opts" = "3" ];                             
-then
-am start -a android.intent.action.VIEW -d https://bit.ly/3hF5PT2 2>/dev/null
-clear
-help
-elif [ "$opts" = "4" ];                             
-then
-am start -a android.intent.action.VIEW -d https://noob-hackers.github.io/noobspage 2>/dev/null
-clear
-help
-elif [ "$opts" = "5" ];
+
+
 then
 exit
 else
