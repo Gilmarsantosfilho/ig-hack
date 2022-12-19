@@ -95,11 +95,4 @@ elif [[ $option == 4 ]]; then
 exit 1
 else
 echo
-printf "\e[1;93m [>!<] Seleção inválida!\e[0m\n"
-sleep 1
-echo
-fi
-exit
-
-
-                                                                                   
+printf "\e[1;93m [>!<] Seleção inválida!\e[0m\n"                                                                              
