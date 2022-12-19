@@ -4,41 +4,8 @@
 #Goes to real author
 #colours
 #####3#3#
-check(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/ighack/master/update.v3.2 2>/dev/null; then
-cd $HOME/ighack/core
-echo "ig" > update.txt
-else
-echo
-fi
-}
-check
-option(){
-if [ -f "$HOME/ighack/core/update.txt" ];then
-cd $HOME/ighack/core
-bash update.sh
-else
-echo " "
-fi
-}
-option
-check1(){
-if wget --spider https://raw.githubusercontent.com/noob-hackers/patchupdateznh/main/ighack.v.1 2>/dev/null; then
-cd $HOME/ighack/core
-echo "igg" > patch.txt
-else
-echo
-fi
-}
-check1
-option1(){
-if [ -f "$HOME/ighack/core/patch.txt" ];then
-cd $HOME/ighack/core
-bash patch.sh
-else
-echo " "
-fi
-}
+
+
 red='\033[1;31m'
 rset='\033[0m'
 grn='\033[1;32m'
@@ -49,7 +16,7 @@ pink='\033[1;35m'
 #coding section starts :)
 banner(){
 clear
-if [ -f "$HOME/ighack/setup" ];
+if [ -f "$HOME/ig-hack//setup" ];
 then
 cd $HOME/ighack
 bash setup
@@ -77,9 +44,9 @@ echo -e '\e[91m
     ╚═╝ ╚═════╝       \e[92m╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝\e[91m
 \e[0m'
 printf "\n"
-printf "                \e[101m\e[1;77m  >>  Script By N17R0 << \e[0m\n"
+printf "                \e[101m\e[1;77m  >>  Script By Gilmar Scipt<< \e[0m\n"
 printf "\n"
-printf "       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Noob Hackers \e[100m\e[1;77m << \e[0m\n"
+printf "       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Gilmar Filho \e[100m\e[1;77m << \e[0m\n"
 printf "\n"
 }
 baner1(){
@@ -104,9 +71,9 @@ echo -e '\e[91m
     ╚═╝ ╚═════╝       \e[92m╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝\e[91m
 \e[0m'
 printf "\n"
-printf "                \e[101m\e[1;77m  >>  Script By N17R0 << \e[0m\n"
+printf "                \e[101m\e[1;77m  >>  Script By Gilmar Scipt << \e[0m\n"
 printf "\n"
-printf "       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Noob Hackers \e[100m\e[1;77m << \e[0m\n"
+printf "       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Gilmar filho \e[100m\e[1;77m << \e[0m\n"
 printf "\n"
 }
 echo 
